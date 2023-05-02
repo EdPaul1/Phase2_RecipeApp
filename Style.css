@@ -1,0 +1,124 @@
+/* Reset styles to ensure consistency across browsers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and font */
+  body {
+    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the logo */
+  header h1 {
+    font-size: 28px;
+    color: #2e2e2e;
+    font-weight: 600;
+  }
+  
+  /* Style the search bar */
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input[type="text"] {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #2e2e2e;
+    margin-right: 10px;
+  }
+  
+  .search button[type="submit"] {
+    border: none;
+    background-color: #00c0c7;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search button[type="submit"]:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Style the add recipe button */
+  .add-recipe {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  
+  .add-recipe button {
+    border: none;
+    background-color: #00c0c7;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .add-recipe button:hover {
+    background-color: #0097a7;
+  }
+  
+  /* Style the recipe list */
+  .recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+  }
+  
+  .recipe-list li {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .recipe-list li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .recipe-list li h2 {
+    font-size: 24px;
+    color: #2e2e2e;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-list li p {
+    font-size: 16px;
+    color: #2e2e2e;
+    font-weight: 300
+  }  
