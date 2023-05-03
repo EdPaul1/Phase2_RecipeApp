@@ -17,6 +17,7 @@ function RecipeList() {
         <div key={category.idCategory} className="category-item">
           <h2 className="category-title">{category.strCategory}</h2>
           <img className="category-image" src={category.strCategoryThumb} alt={category.strCategory} />
+          <a href = "#" class = "recipe-btn">Get Recipe</a>
           {/* <p className="category-description">{category.strCategoryDescription}</p> */}
         </div>
       ))}
