@@ -2,12 +2,21 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    border-bottom: 1px solid red;
+    margin: 50px;
+    border-radius: 13px ;
+    justify-content: center;
+    
+   
+    
   }
   
   .search {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    
+    
   }
   
   .search input[type="text"] {
@@ -17,11 +26,12 @@ section {
     border: 1px solid #ccc;
     outline: none;
     font-size: 16px;
+    border: 1px solid red;
   }
   
   .search button[type="submit"] {
     
-    background-color: #0077c2;
+    background-color: #c22d00;
     color: #fff;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -34,7 +44,10 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-    overflow-y: scroll;
+    box-shadow: 0 0 50px rgba(224, 13, 13, 0.1);
+    border-radius: 13px ;
+    
+    
     
   }
   
@@ -47,6 +60,7 @@ section {
     grid-auto-rows: auto;
     gap: 20px;
     
+    
   }
   
   .container ul li {
@@ -55,11 +69,11 @@ section {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     text-align: center;
     background-color: #fff;
+    box-shadow: 0 0 50px rgba(224, 13, 13, 0.1);
   }
   
   .container ul li h2 {
     font-size: 20px;
-    margin: 0 0 10px;
   }
   
   .container ul li img {
@@ -67,6 +81,12 @@ section {
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
+    
 
   }
   
+  .select {
+    border: none;
+    margin-left: 30px;
+    border-radius: 5px;
+  }

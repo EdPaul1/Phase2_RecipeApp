@@ -11,6 +11,15 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
+  @keyframes App-logo-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .App-header {
@@ -29,10 +38,15 @@
 }
 
 @keyframes App-logo-spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(360deg);
   }
+}
+
+.title {
+  margin: 50px;
+  font-size: 30px;
 }

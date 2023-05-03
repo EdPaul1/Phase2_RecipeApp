@@ -1,6 +1,7 @@
 import React from 'react';
 import RecipeList from './RecipeList';
 import RecipeSearch from './RecipeSearch';
+import './App.css'
 
 function App() {
   
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Recipe App</h1>  
+        <h1 className='title'>Recipe App</h1>  
       </header>
       <RecipeSearch/>
       <RecipeList/>
