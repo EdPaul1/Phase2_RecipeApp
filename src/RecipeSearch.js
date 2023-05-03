@@ -49,6 +49,7 @@ function RecipeSearch() {
               <li key={meal.idMeal}>
                 <h2>{meal.strMeal}</h2>
                 <img src={meal.strMealThumb} alt={meal.strMeal} />
+                <a href = "#" class = "recipe-btn">Get Recipe</a>
               </li>
             ))}
           </ul>
