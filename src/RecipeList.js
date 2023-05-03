@@ -1,30 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import "./RecipeList.css";
+
 
 function RecipeList() {
-  const [recipes, setRecipes] = useState([]);
-
+  const [categories, setCategories] = useState([]);
   useEffect(() => {
-    async function fetchRecipes() {
-      const response = await fetch('recipes.json');
-      const data = await response.json();
-      setRecipes(data);
-    }
-
-    fetchRecipes();
+    fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+      .then(response => response.json())
+      .then(data => setCategories(data.categories))
+      .catch(error => console.error(error));
   }, []);
 
   return (
-    <div>
-      <h1>Recipes</h1>
-      <ul>
-        {recipes.map(recipe => (
-          <li key={recipe.id}>
-            <img src={recipe.image} alt={recipe.name} />
-            <h2>{recipe.name}</h2>
-            <p>{recipe.description}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="categories-list">
+      {categories.map(category => (
+        <div key={category.idCategory} className="category-item">
+          <h2 className="category-title">{category.strCategory}</h2>
+          <img className="category-image" src={category.strCategoryThumb} alt={category.strCategory} />
+          {/* <p className="category-description">{category.strCategoryDescription}</p> */}
+        </div>
+      ))}
     </div>
   );
 }
