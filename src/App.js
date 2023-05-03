@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import RecipeList from './components/RecipeList';
+import RecipeList from './RecipeList';
 import recipesData from './recipes.json';
 
 function App() {
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
