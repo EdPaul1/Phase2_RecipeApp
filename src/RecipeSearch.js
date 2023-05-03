@@ -9,7 +9,7 @@ function RecipeSearch() {
   const handleSearch = () => {
     let searchApi = "";
     if (searchType === "ingredient") {
-      searchApi = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputText}`;
+      searchApi = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputText}`;//{strCategory}
     } else if (searchType === "meal") {
       searchApi = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInputText}`;
     }
