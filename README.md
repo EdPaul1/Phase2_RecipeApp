@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PHASE 2 PROJECT RECIPE APP
+This app will fetch and show different food recipes. 
 
 ## Available Scripts
 
