@@ -2,7 +2,6 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    border-bottom: 1px solid red;
     margin: 50px;
     border-radius: 13px ;
     justify-content: center;
