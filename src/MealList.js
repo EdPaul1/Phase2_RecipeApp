@@ -1,8 +1,10 @@
 import React from 'react';
+import "./RecipeSearch.css"
+
 
 function MealList({ category, meals }) {
   return (
-    <div>
+    <div className="categories-list">
       <h2 className="category-header">{category}</h2>
       <div className="meal-list">
         {meals.map(meal => (
