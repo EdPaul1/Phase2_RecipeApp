@@ -1,0 +1,17 @@
+.close-button {
+    border: none;
+text-decoration: none;
+color: white;
+background-color: #fd7f20;
+font-weight: 500;
+margin: 1rem auto;
+border-radius: 2rem;
+-webkit-border-radius: 2rem;
+-moz-border-radius: 2rem;
+-ms-border-radius: 2rem;
+-o-border-radius: 2rem;
+transition: all 0.4s linear;
+-webkit-transition: all 0.4s linear;
+-moz-transition: all 0.4s linear;
+-ms-transition: all
+}

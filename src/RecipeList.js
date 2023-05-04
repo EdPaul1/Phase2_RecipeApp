@@ -20,6 +20,10 @@ function RecipeList() {
       .catch(error => console.error(error));
   }
 
+  function handleCloseClick() {
+    setSelectedCategory(null);
+  }
+
   return (
     <div>
       {!selectedCategory && (
@@ -32,7 +36,7 @@ function RecipeList() {
           ))}
         </div>
       )}
-      {selectedCategory && <MealList category={selectedCategory.name} meals={selectedCategory.meals} />}
+      {selectedCategory && <MealList category={selectedCategory.name} meals={selectedCategory.meals} onCloseClick={handleCloseClick} />}
     </div>
   );
 }
