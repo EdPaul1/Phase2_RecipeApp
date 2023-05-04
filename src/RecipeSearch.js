@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./RecipeSearch.css";
+import FavoriteButton from './FavoriteButton';
 
 function RecipeSearch() {
   const [meals, setMeals] = useState([]);
@@ -58,6 +59,7 @@ function RecipeSearch() {
         {selectedMeal ? (
           <div className="modal">
             <div className="modal-content">
+            <FavoriteButton itemId={selectedMeal.mealId} />
               <button className="close-btn" onClick={handleCloseRecipe}>
                 &times;
               </button>
@@ -99,6 +101,7 @@ function RecipeSearch() {
         ) : (
           <p>No results found</p>
         )}
+
       </div>
     </section>
   );

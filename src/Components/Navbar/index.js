@@ -8,7 +8,7 @@ import {
 }  from './NavbarElements';
 import Home from "../../Home";
 import About from "../../About";
-import Favorites from "../../Favorites"
+import Favorites from "../../FavoriteButton"
 import News from '../../News';
   
 const Navbar = () => {
