@@ -1,19 +1,13 @@
+import React, { useState, useEffect } from 'react';
+import './News.css';
 
-import React from 'react';
-  
-const News = () => {
+const News = ()=>{
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Annual Report</h1>
+    <div>
+      <h2>Search For Recipe u</h2>
+
     </div>
   );
-};
-  
+  }
+
 export default News;

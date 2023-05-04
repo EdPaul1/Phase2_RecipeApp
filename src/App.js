@@ -2,37 +2,34 @@ import React from 'react';
 import RecipeList from './RecipeList';
 import RecipeSearch from './RecipeSearch';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import NavBar from "./NavBar";
 import Home from "./Home";
-import About from "./About";
-import Favorites from "./FavoriteButton"
+import Category from "./Category";
+import Favorites from "./Favorites"
 import News from './News';
-
-
-
+import Navigation from "./Navigation";
+// import RecipeList from "./RecipeList";
 
 function App() {
- 
-
   return (
-    <>
-    <Router>
-      <Navbar className='navi'/>
-      <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/favorites' component={Favorites} />
-         <Route path='/news' component={News} />
-      </Routes>
-    </Router>
-    <div>
-      <header>
-        <h1 className='title'>Recipe App</h1>  
-      </header>
-      <Home />
-    </div>
-    </>
+ <>
+  <Router>
+    <NavBar />
+    <Routes>
+      <Route path='/' exact component={Home} />
+      <Route path='/search' element={<RecipeSearch />} />
+      <Route path='/favorites' component={<News />} />
+      <Route path='/category' element={ Category} />
+    </Routes>
+  </Router>
+  {/* <div>
+    <header>
+      <h1 className='title'>Recipe App</h1>  
+    </header>
+  </div> */}
+</>
+
   );
 }
 
