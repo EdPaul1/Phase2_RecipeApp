@@ -1,4 +1,5 @@
 # PHASE 2 PROJECT - PREPARE MEAL
+              screenshot
 ![Screenshot from 2023-05-04 14-11-35](https://user-images.githubusercontent.com/126860107/236188373-83ce0784-18d8-4c5a-bb27-24969c7c2179.png)
 
 LIVE_LINK: https://prepare-meal.vercel.app/#
@@ -12,7 +13,7 @@ TABLE OF CONTENTS
 6. Credits
 7. Licence
 
-1.INTRODUCTION. 
+1. INTRODUCTION. 
 
 Prepare-Meals is an app that offers the user access to different kinds of recipes from all over the world. With increased globalization, and improved access to the internet, the modern person is not restricted on what they consume. using this App, you can prepare from from India or any part of the world with a touch of a button.
 
