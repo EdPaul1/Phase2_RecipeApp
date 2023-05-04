@@ -1,5 +1,5 @@
 # PHASE 2 PROJECT - PREPARE MEAL
-              screenshot
+                    Screenshot
 ![Screenshot from 2023-05-04 14-11-35](https://user-images.githubusercontent.com/126860107/236188373-83ce0784-18d8-4c5a-bb27-24969c7c2179.png)
 
 LIVE_LINK: https://prepare-meal.vercel.app/#
