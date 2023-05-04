@@ -37,7 +37,7 @@ function RecipeSearch() {
       <div className="search">
         <input
           type="text"
-          placeholder="Search for recipes"
+          placeholder="Search for over 2m+ recipes"
           value={searchInputText}
           onChange={(e) => setSearchInputText(e.target.value)}
         />

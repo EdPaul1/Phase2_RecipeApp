@@ -5,10 +5,10 @@
 }
 
 .category-item {
-    width: 300px;
+    width: 200px;
     margin: 20px;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 220px;
     text-align: center;
     box-shadow: 0 0 30px rgba(224, 13, 13, 0.1);
 }
