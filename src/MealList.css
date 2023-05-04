@@ -1,12 +1,13 @@
 .close-button {
-    position: absolute;
-    top: 41.5%;
-    left: 55%;
     transform: translate(-50%, -50%);
     border: none;
+    display: block;
+    position: relative;
+    left: 40%;
+    padding: 7px 5px;
     text-decoration: none;
     color: white;
-    background-color: #fd7f20;
+    background-color: #EE6E0D;
     font-weight: 500;
     margin: 1rem auto;
     border-radius: 2rem;
@@ -18,5 +19,37 @@
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
     -ms-transition: all;
+  }
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
   
