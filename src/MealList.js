@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import './RecipeSearch.css';
-import './MealList.css'
+import './MealList.css';
+
 function MealList({ category, meals, onCloseClick }) {
   const [selectedMeal, setSelectedMeal] = useState(null);
+
   const handleGetRecipe = (mealId) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
       .then((response) => response.json())
       .then((data) => setSelectedMeal(data.meals[0]))
       .catch((error) => console.error(error));
   };
+
   const handleCloseRecipe = () => {
     setSelectedMeal(null);
   };
+
   return (
     <div>
       {selectedMeal ? (
@@ -62,4 +66,5 @@ function MealList({ category, meals, onCloseClick }) {
     </div>
   );
 }
+
 export default MealList;
