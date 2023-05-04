@@ -29,6 +29,8 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
   }
   
   .modal-content {
@@ -36,14 +38,42 @@
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(240, 29, 29, 0.1);
+    align-items: center;
+    justify-content: center;
+  
   }
   
+  .modal-content::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    background-color: #EE6E0D;
+    border-radius: 13px;
+  }
+
+  .modal-content img {
+    position: relative;
+    left: 20%;
+    max-width: 600px;
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0 0 30px rgba(233, 10, 10, 0.1);
+  }
+
   .close-btn {
-    color: #aaaaaa;
+    color: #f3efef;
     float: right;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
+    border-radius: 13px;
+    padding: 3px 8px;
+    border: none;
+    background-color: #EE6E0D;
+
   }
   
   .close-btn:hover,
