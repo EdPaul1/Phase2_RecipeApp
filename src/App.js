@@ -39,7 +39,7 @@ function App() {
       
       
       <RecipeSearch/>
-      <NationalityCards/>
+      
       <RecipeList/>
     </div>
     </>
