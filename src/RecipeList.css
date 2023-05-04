@@ -2,15 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #fd7f20;
 }
 
 .category-item {
     width: 200px;
     margin: 20px;
     padding: 20px;
-    border-radius: 220px;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 0 30px rgba(224, 13, 13, 0.1);
+    box-shadow: 0 0 30px rgba(224, 13, 13, 0.5);
 }
 
 .category-title {
@@ -54,4 +55,3 @@
 .recipe-btn:hover {
     background: var(--tenne-tawny-dark);
 }
-

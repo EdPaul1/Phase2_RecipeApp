@@ -87,6 +87,9 @@ section {
     border: 1px solid red;
   }
   
+  .search input placeholder {
+   
+  }
   .search button[type="submit"] {
     
     background-color: #c22d00;

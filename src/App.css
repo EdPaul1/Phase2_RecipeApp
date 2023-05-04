@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
 }
 
 .App-link {
@@ -49,4 +49,36 @@
 .title {
   margin: 50px;
   font-size: 30px;
+}
+
+.decor {
+  position: absolute;
+  left: 0%;
+  top:-5%;
+}
+
+.decor2 {
+  position: absolute;
+  left: 85%;
+  top:-10%;
+  max-width: 400px;
+  transform: rotate(-25deg);
+}
+
+.decor3 {
+  position: absolute;
+  left: 90%;
+  top:3%;
+  max-width: 300px;
+  transform: rotate(-10deg);
+}
+
+.quote {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.cite {
+  margin-left: 120px;
+  font-weight: 50;
 }

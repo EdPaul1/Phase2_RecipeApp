@@ -1,0 +1,47 @@
+.nationality-cards-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .nationality-cards-container::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  .nationality-cards-container::-webkit-scrollbar-thumb {
+   background-color: orange;
+  }
+
+  .nationality-cards-wrapper {
+    display: flex;
+  }
+  
+  .nationality-card {
+    margin: 10px;
+    
+    display: flex;
+  }
+  
+  .nationality-card-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .nationality-card-circle span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .nationality-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 180px;
+    object-fit: cover;
+  }
+  
