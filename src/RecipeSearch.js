@@ -63,14 +63,23 @@ function RecipeSearch() {
               </button>
               <h2>{selectedMeal.strMeal}</h2>
               <img src={selectedMeal.strMealThumb} alt={selectedMeal.strMeal} />
-              <h3>Ingredients:</h3>
+             
+             <h3>Ingredients:</h3>
               <ul>
                 {Object.keys(selectedMeal)
                   .filter((key) => key.startsWith("strIngredient") && selectedMeal[key])
-                  .map((key) => (
-                    <li key={key}>{selectedMeal[key]}</li>
-                  ))}
+                  .map((key, index) => {
+                    const ingredient = selectedMeal[key];
+                    const measureKey = `strMeasure${key.slice(13)}`;
+                    const measurement = selectedMeal[measureKey];
+                    return (
+                      <li key={index}>
+                        {`${ingredient} - ${measurement}`}
+                      </li>
+                    );
+                  })}
               </ul>
+              
               <h3>Instructions:</h3>
               <p>{selectedMeal.strInstructions}</p>
             </div>
