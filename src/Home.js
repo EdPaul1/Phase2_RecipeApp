@@ -37,7 +37,7 @@ function Home() {
 
     <img src='https://www.themealdb.com/images/category/miscellaneous.png' className='decor'/>
     <img src='https://file.removal.ai/preview/tmp-6454460a5316f.png' className='decor2'/>
-    <img src='https://file.removal.ai/preview/tmp-6454470ba2646.png' className='decor3'/>
+    <img src='https://c1.wallpaperflare.com/preview/994/873/144/leaf-freshness-health-vegetable.jpg' className='decor3'/>
      
         <div className="row1">
           <img src="https://c4.wallpaperflare.com/wallpaper/997/408/959/tomato-leaves-vegetables-meat-beef-wallpaper-preview.jpg" alt="Product 1" />
