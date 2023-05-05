@@ -31,19 +31,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
+  text-align: center;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(360deg);
-  }
 }
 
 .title {
@@ -69,5 +61,3 @@
   margin-left: 120px;
   font-weight: 50;
 }
-
-
