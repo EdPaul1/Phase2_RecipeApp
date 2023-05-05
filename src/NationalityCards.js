@@ -39,7 +39,8 @@ const NationalityCards = () => {
         {nationalities.map((nationality, index) => (
           <div key={nationality.strArea} className="nationality-card">
             <div className="nationality-card-circle" style={{backgroundImage: `url(${nationalityImages[index]})`}}>
-              <span className="nationality-name" style={{ color: 'orangered' }}>{nationality.strArea}</span>
+              <span className="nationality-name" style={{ color: 'orangered', fontSize: '20px' }}>{nationality.strArea}</span>
+
             </div>
           </div>
         ))}
