@@ -25,7 +25,7 @@ function FavoriteButton({ itemId }) {
           });
         } else if (!isFavorite && favorites.includes(itemId)) {
           favorites = favorites.filter(id => id !== itemId);
-          return fetch('/favorites.json', {
+          return fetch('http://localhost:8001/favorites', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(favorites)

@@ -7,6 +7,7 @@ function RecipeSearch() {
   const [searchInputText, setSearchInputText] = useState("");
   const [searchType, setSearchType] = useState("ingredient");
   const [selectedMeal, setSelectedMeal] = useState(null);
+  const [favorites, setFavorites] = useState([]);
 
   const handleSearch = () => {
     let searchApi = "";
@@ -31,6 +32,22 @@ function RecipeSearch() {
 
   const handleCloseRecipe = () => {
     setSelectedMeal(null);
+  };
+
+  const handleFavorite = (meal) => {
+    const newFavorites = [...favorites, meal];
+    setFavorites(newFavorites);
+  
+    fetch("http://localhost:3000/favorites", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newFavorites),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
   };
 
   return (
@@ -59,14 +76,14 @@ function RecipeSearch() {
         {selectedMeal ? (
           <div className="modal">
             <div className="modal-content">
-            <FavoriteButton itemId={selectedMeal.mealId} />
+              <FavoriteButton itemId={selectedMeal.idMeal} onFavorite={handleFavorite} />
               <button className="close-btn" onClick={handleCloseRecipe}>
                 &times;
               </button>
               <h2>{selectedMeal.strMeal}</h2>
               <img src={selectedMeal.strMealThumb} alt={selectedMeal.strMeal} />
-             
-             <h3>Ingredients:</h3>
+
+              <h3>Ingredients:</h3>
               <ul>
                 {Object.keys(selectedMeal)
                   .filter((key) => key.startsWith("strIngredient") && selectedMeal[key])

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './RecipeSearch.css';
 import './MealList.css';
+import FavoriteButton from './FavoriteButton';
 
 function MealList({ category, meals, onCloseClick }) {
   const [selectedMeal, setSelectedMeal] = useState(null);
+  const [favorites, setFavorites] = useState([]);
 
   const handleGetRecipe = (mealId) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
@@ -16,11 +18,19 @@ function MealList({ category, meals, onCloseClick }) {
     setSelectedMeal(null);
   };
 
+  const handleFavorite = (meal) => {
+    const newFavorites = [...favorites, meal];
+    setFavorites(newFavorites);
+
+    // Persist favorites to backend server here (e.g. favorites.json)
+  };
+
   return (
     <div>
       {selectedMeal ? (
         <div className="modal">
           <div className="modal-content">
+          <FavoriteButton itemId={selectedMeal.idMeal} onFavorite={handleFavorite} />
             <button className="close-btn" onClick={handleCloseRecipe}>
               &times;
             </button>

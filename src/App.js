@@ -9,27 +9,28 @@ import Category from "./Category";
 import Favorites from "./Favorites"
 import News from './News';
 import Navigation from "./Navigation";
+import About from "./About";
 // import RecipeList from "./RecipeList";
 
 function App() {
   return (
- <>
-  <Router>
-    <NavBar />
-    <Routes>
-      <Route path='/' exact component={Home} />
-      <Route path='/search' element={<RecipeSearch />} />
-      <Route path='/favorites' component={<News />} />
-      <Route path='/category' element={ Category} />
-    </Routes>
-  </Router>
-  {/* <div>
-    <header>
-      <h1 className='title'>Recipe App</h1>  
-    </header>
-  </div> */}
-</>
-
+    <>
+    <Router>
+      <NavBar className='navi'/>
+      <Routes>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/favorites' component={Favorites} />
+         <Route path='/news' component={News} />
+      </Routes>
+    </Router>
+    <div>
+      <header>
+        <h1 className='title'>Recipe App</h1>  
+      </header>
+      <Home />
+    </div>
+    </>
   );
 }
 

@@ -1,33 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import favoritesData from './favorites.json';
-import FavoriteButton from './FavoriteButton';
+import React, { useState } from "react";
 
-function Favorites() {
-  const [favorites, setFavorites] = useState([]);
+function FavoriteButton(props) {
+  const [isFavorite, setIsFavorite] = useState(false);
 
-  // Load the favorites from favoritesData on component mount
-  useEffect(() => {
-    const favoriteItemIds = favoritesData.itemIds || [];
-    setFavorites(favoriteItemIds);
-  }, []);
+  const handleFavorite = () => {
+    setIsFavorite(!isFavorite);
+
+    // send POST request to server with favorite data
+    fetch('http://localhost:8001/favorites', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ itemId: props.itemId, isFavorite: !isFavorite })
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to save favorite.');
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      setIsFavorite(isFavorite);
+    });
+  };
 
   return (
-    <div>
-      <h2>Favorites</h2>
-      {favorites.length > 0 ? (
-        <ul>
-          {favorites.map(itemId => (
-            <li key={itemId}>
-              <FavoriteButton itemId={itemId} />
-              <span>{itemId}</span>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>No favorites yet</p>
-      )}
-    </div>
+    <button onClick={handleFavorite}>{isFavorite ? 'Unfavorite' : 'Favorite'}</button>
   );
 }
 
-export default Favorites;
+export default FavoriteButton;
