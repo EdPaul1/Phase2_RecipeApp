@@ -55,6 +55,7 @@ return (
         <h2 className="category-title">{meal.strMeal}</h2>
         <img className="category-image" src={meal.strMealThumb} alt={meal.strMeal} />
         <FavoriteButton itemId={id} />
+        <button onClick={handleRemove}>Remove from favorites</button>
       </div>
     ) : (
       <p>Loading recipe...</p>
