@@ -24,12 +24,7 @@ function App() {
          <Route path='/news' component={News} />
       </Routes>
     </Router>
-    <div>
-      <header>
-        <h1 className='title'>Recipe App</h1>  
-      </header>
-      <Home />
-    </div>
+
     </>
   );
 }

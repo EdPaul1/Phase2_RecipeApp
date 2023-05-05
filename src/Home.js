@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import "./Home.css";
-import Menu from "./images/Menu.js";
 import FavoriteButton from "./FavoriteButton.js";
 import NationalityCards from "./NationalityCards.js";
 
