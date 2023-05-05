@@ -1,7 +1,12 @@
 body {
-    margin: 0;
+    margin-left: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: mediumorchid;
+    background-color: rgb(249, 247, 250);
+    display: block;
+    overflow-x:hidden ;
+    max-width: 90%;
+    
+    
 }
 
 .header {
@@ -11,7 +16,7 @@ body {
   }
 
   h1 {
-    color: #333;
+    color: #160c0c;
     font-size: 50px;
   }
 
@@ -35,9 +40,21 @@ body {
     height: 300px;
     text-align: center;
   }
+  .row1 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;   
+    box-shadow: 0 0 30px rgba(224, 13, 13, 0.5);
+  }
+
    .row1 img {
-    width:100%;
-    height: 800px;
+    width: 100%;
+    margin-top: 0px;
+   
    }
 
   .column img {
@@ -74,31 +91,91 @@ body {
       margin-bottom: 20px;
     }
   }
-  .menu-container {
-    width: 100%;
-    height: 200px;
-    overflow-x: auto;
-    white-space: nowrap;
+/* 
+  .quote {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+  max-width: 500px;
+  } */
+
+  .decor {
+    position: absolute;
+  top: 4%;
+  left: -6%;
+  }
+
+  .decor img{
+    max-width: 100%;
+    height: auto;
   }
   
-  .menu-container img {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    margin-right: 10px;
-    box-sizing: border-box;
+  .decor2 {
+    position: absolute;
+    left: 85%;
+    top:-10%;
+    max-width: 400px;
+    transform: rotate(-25deg);
+  }
+
+  .cite {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .p-h {
+    font-size: 37px;
+  }
+
+  .p-p {
+    font-size: 20px;
+  }
+
+
+  .quote-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 110px;
+  }
+
+  .quote-container img {
+    margin-left: 70px;
   }
   
-  .menu-container::-webkit-scrollbar {
-    height: 8px;
+  .quote-text {
+    flex: 1;
+  }
+
+  
+  .quote {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .hometext {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
   }
   
-  .menu-container::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 5px;
+  .s1 {
+    font-size: 23px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 60px;
+  }
+
+  .s2 {
+    font-size: 39px;
   }
   
-  .menu-container::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+  .decor4 {
+    position: absolute;
+    max-width: 500px;
+    left: 68%
   }
+ 
