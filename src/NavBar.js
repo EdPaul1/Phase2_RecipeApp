@@ -12,6 +12,7 @@ import Category from './Category';
 import Favorites from './Favorites';
 import News from './News';
 import RecipeList from './RecipeList';
+import RecipeSearch from './RecipeSearch';
 
 
 const NavBar = () => {
@@ -19,7 +20,7 @@ const NavBar = () => {
   const handleHomeClick = () => setCurrentComponent(<Home />);
   const handleFavoritesClick = () => setCurrentComponent(<Favorites />);
   const handleCategoryClick = () => setCurrentComponent(<RecipeList />);
-  const handleSearchClick = () => setCurrentComponent(<Category />);
+  const handleSearchClick = () => setCurrentComponent(<RecipeSearch />);
 
   return (
     <>
