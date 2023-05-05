@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FavoriteButton from "./FavoriteButton";
-import './RecipeList.css';
+import './Favorite.css'
+
 
 function FavoriteRecipes() {
   const [favorites, setFavorites] = useState([]);
@@ -17,7 +18,7 @@ function FavoriteRecipes() {
   };
 
   return (
-    <div className="categories-list">
+    <div className="categories-list2">
       <h1>Favorite Recipes</h1>
       {favorites.length > 0 ? (
         <ul>

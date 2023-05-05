@@ -31,13 +31,13 @@ function Home() {
     <blockquote className='quote' style={{ fontFamily: 'Poppins'}}>“Cooking is not difficult. Everyone has taste, even if they don’t realize it. Even if you’re not a great chef, there’s nothing to stop you understanding the difference between what tastes good and what doesn’t.”</blockquote>
     <cite className='cite'> Gerard Depardieu</cite>
   </div>
-  <img src='https://file.removal.ai/preview/tmp-645457b5d0389.png' className='decor4'/>
+  <img src='https://www.themealdb.com/images/category/pasta.png' className='decor4'/>
 </div>
 
 
     <img src='https://www.themealdb.com/images/category/miscellaneous.png' className='decor'/>
-    <img src='https://file.removal.ai/preview/tmp-6454460a5316f.png' className='decor2'/>
-    <img src='https://c1.wallpaperflare.com/preview/994/873/144/leaf-freshness-health-vegetable.jpg' className='decor3'/>
+    <img src='https://www.themealdb.com/images/category/dessert.png' className='decor2'/>
+    <img src='https://www.themealdb.com/images/category/side.png' className='decor3'/>
      
         <div className="row1">
           <img src="https://c4.wallpaperflare.com/wallpaper/997/408/959/tomato-leaves-vegetables-meat-beef-wallpaper-preview.jpg" alt="Product 1" />

@@ -52,10 +52,11 @@ function RecipeSearch() {
 
   return (
     <section>
+      <p className="wordspace" style={{ fontFamily: 'Poppins'}}>Find meals for your ingredients</p>
       <div className="search">
         <input
           type="text"
-          placeholder="Search for over 2m+ recipes"
+          placeholder="Search from over 2m+ recipes"
           value={searchInputText}
           onChange={(e) => setSearchInputText(e.target.value)}
         />
@@ -72,6 +73,7 @@ function RecipeSearch() {
           <option value="meal">Meal Name</option>
         </select>
       </div>
+      <p style={{ fontFamily: 'Poppins'}} className='results'>Results:</p>
       <div className="container">
         {selectedMeal ? (
           <div className="modal">
@@ -118,6 +120,9 @@ function RecipeSearch() {
         ) : (
           <p>No results found</p>
         )}
+         <img src='https://www.themealdb.com/images/category/miscellaneous.png' className='decor5'/>
+    <img src='https://www.themealdb.com/images/category/dessert.png' className='decor6'/>
+    <img src='https://www.themealdb.com/images/category/side.png' className='decor'/>
 
       </div>
     </section>

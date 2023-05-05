@@ -25,6 +25,10 @@ function RecipeList() {
   }
 
   return (
+    <section>
+      <img src='https://www.themealdb.com/images/category/miscellaneous.png' className='decor5'/>
+    <img src='https://www.themealdb.com/images/category/dessert.png' className='decor6'/>
+    <img src='https://www.themealdb.com/images/category/seafood.png' className='decor7'/>
     <div >
       {!selectedCategory && (
         <div className="categories-list">
@@ -38,6 +42,7 @@ function RecipeList() {
       )}
       {selectedCategory && <MealList category={selectedCategory.name} meals={selectedCategory.meals} onCloseClick={handleCloseClick} />}
     </div>
+    </section>
   );
 }
 

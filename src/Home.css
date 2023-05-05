@@ -115,9 +115,9 @@ body {
   .decor2 {
     position: absolute;
     left: 85%;
-    top:-10%;
+    top:-5%;
     max-width: 400px;
-    transform: rotate(-25deg);
+    transform: rotate(-12deg);
   }
 
   .cite {
@@ -178,6 +178,6 @@ body {
   .decor4 {
     position: absolute;
     max-width: 1000px;
-    left: 0%
+    left: 70%
   }
- 
+

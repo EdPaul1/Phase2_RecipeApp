@@ -73,6 +73,7 @@ section {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 10px;
     
     
   }
@@ -264,4 +265,37 @@ section {
 
 .category-header {
   text-align: center;
+}
+
+
+.decor5 {
+  position: absolute;
+top: 4%;
+left: -6%;
+}
+
+.decor6 {
+  position: absolute;
+  left: 85%;
+  top:-5%;
+  max-width: 400px;
+  transform: rotate(-12deg);
+}
+
+.decor7 {
+  position: absolute;
+  max-width: 500px;
+  left: 90%;
+  top: 5%;
+}
+
+.results {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.wordspace {
+  margin-top: 150px;
+  font-size: 37px;
+  font-weight: 900;
 }
