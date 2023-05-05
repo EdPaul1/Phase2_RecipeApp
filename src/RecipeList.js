@@ -25,7 +25,7 @@ function RecipeList() {
   }
 
   return (
-    <div>
+    <div >
       {!selectedCategory && (
         <div className="categories-list">
           {categories.map(category => (

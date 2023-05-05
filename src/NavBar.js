@@ -34,11 +34,11 @@ const NavBar = () => {
             <NavLink to="/search" onClick={handleSearchClick} activeStyle>
           Search
           </NavLink>
-          <NavLink to="/favorites" onClick={handleFavoritesClick} activeStyle>
-            Favorites
-          </NavLink>
           <NavLink to="/category" onClick={handleCategoryClick} activeStyle>
             Category
+          </NavLink>
+          <NavLink to="/favorites" onClick={handleFavoritesClick} activeStyle>
+            Favorites
           </NavLink>
 
         </NavMenu>

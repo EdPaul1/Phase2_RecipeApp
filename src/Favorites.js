@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FavoriteButton from "./FavoriteButton";
+import './RecipeList.css';
 
 function FavoriteRecipes() {
   const [favorites, setFavorites] = useState([]);
@@ -16,7 +17,7 @@ function FavoriteRecipes() {
   };
 
   return (
-    <div>
+    <div className="categories-list">
       <h1>Favorite Recipes</h1>
       {favorites.length > 0 ? (
         <ul>
@@ -47,20 +48,20 @@ function Recipe({ id, onRemoveFavorite }) {
     onRemoveFavorite(id);
   };
 
-  return (
-    <div>
-      {meal ? (
-        <div>
-          <h2>{meal.strMeal}</h2>
-          <img src={meal.strMealThumb} alt={meal.strMeal} />
-          <FavoriteButton itemId={id} />
-          <button onClick={handleRemove}>Remove from favorites</button>
-        </div>
-      ) : (
-        <p>Loading recipe...</p>
-      )}
-    </div>
-  );
+return (
+  <div className="categories-list">
+    {meal ? (
+      <div className="meal-info">
+        <h2 className="category-title">{meal.strMeal}</h2>
+        <img className="category-image" src={meal.strMealThumb} alt={meal.strMeal} />
+        <FavoriteButton itemId={id} />
+      </div>
+    ) : (
+      <p>Loading recipe...</p>
+    )}
+  </div>
+);
+
 }
 
 export default FavoriteRecipes;

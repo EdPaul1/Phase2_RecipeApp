@@ -46,7 +46,7 @@ function Home() {
         </div>
 
         <div className="row">
-          <h2>Trending Recipes</h2>
+          {/* <h2>Trending Recipes</h2> */}
           <div className="favorites">
             <FavoriteButton favorites={favorites} />
           </div>
