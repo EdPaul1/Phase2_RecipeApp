@@ -44,7 +44,7 @@ Prepare-Meals is an app that offers the user access to different kinds of recipe
    The application is fully functional and ready for use. However, further improvements and features could be added in the future, such as user accounts, recipe saving and sharing, and social media integration.
 
 6. Credits
-   This application was developed by group 7 as part of a curriculum project. The members involved are Paul Ndiritu (Scrum-master), Nick Mwirigi, Teddy Wambua and Noah Mwangi. Another important credit is TheMealDB API (https://www.themealdb.com/api.php) as it was the source of the api used in the application.
+   This application was developed by group Epta as part of a curriculum project. The members involved are Paul Ndiritu (Scrum-master), Nick Mwirigi, Teddy Wambua and Noah Mwangi. Another important credit is TheMealDB API (https://www.themealdb.com/api.php) as it was the source of the api used in the application.
 
 7. License
    This project is licensed under the MIT License
